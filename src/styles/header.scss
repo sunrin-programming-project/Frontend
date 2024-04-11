@@ -1,0 +1,51 @@
+header {
+  height: 80px;
+  padding: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left-side {
+    font-size: 18px;
+    h1 {
+      font-weight: 900;
+    }
+  }
+  .search-bar {
+    width: 50vw;
+    height: 40px;
+    margin: 20px;
+    color: gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    input {
+      width: 100%;
+      border-width: 0;
+      outline: none;
+      line-height: 40px;
+      &:hover {
+        border-width: 0;
+      }
+    }
+    svg {
+      cursor: pointer;
+    }
+    svg[data-icon="xmark"] {
+      margin-right: 5px;
+    }
+  }
+  .right-side {
+    font-size: 18px;
+    align-items: center;
+    p {
+      padding: 10px 20px 10px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
