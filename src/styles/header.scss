@@ -14,12 +14,13 @@ header {
     width: 50vw;
     height: 40px;
     margin: 20px;
-    color: gray;
-    border-bottom: 1px solid gray;
+    color: #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
     display: flex;
     gap: 10px;
     align-items: center;
     input {
+      color: #a9a9a9;
       width: 100%;
       border-width: 0;
       outline: none;
@@ -39,12 +40,10 @@ header {
     font-size: 18px;
     align-items: center;
     p {
-      padding: 10px 20px 10px 20px;
-      border-radius: 8px;
       transition: all 0.3s ease-in-out;
       cursor: pointer;
       &:hover {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        color: gray;
       }
     }
   }
