@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <header>
         <div className="left-side">
-          <h1>ConHub</h1>
+          <h1>Conhub</h1>
         </div>
         <div className="search-bar">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
