@@ -1,13 +1,15 @@
 import ContestItem from "../components/ContestItem.jsx";
+import Select from "../components/Select.jsx";
 
 const MainPage = () => {
   return (
     <>
       <div className="container">
-        {/* <div className="select">
-          <h6>분야</h6>
-        </div> */}
+        <Select />
         <div className="item">
+          <ContestItem />
+          <ContestItem />
+          <ContestItem />
           <ContestItem />
           <ContestItem />
           <ContestItem />

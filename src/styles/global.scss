@@ -13,4 +13,11 @@
 
 .container {
   padding: 0 80px;
+  .item {
+    height: 70vh;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
