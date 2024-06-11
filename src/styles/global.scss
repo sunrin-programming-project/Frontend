@@ -11,6 +11,13 @@
   font-family: "SUIT-Regular";
 }
 
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+}
 .container {
   padding: 0 80px;
   .item {
@@ -20,4 +27,14 @@
       display: none;
     }
   }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+ a:hover,
+a:active {
+  text-decoration: none;
 }
