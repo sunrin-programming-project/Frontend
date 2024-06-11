@@ -1,8 +1,10 @@
 import "../styles/login.scss";
+import Header from "../components/Header";
 
 const LoginPage = () => {
   return (
     <>
+      <Header />
       <div className="loginContainer">
         <div className="login">
           <h2>

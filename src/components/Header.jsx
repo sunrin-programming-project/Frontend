@@ -5,8 +5,9 @@ import "../styles/header.scss";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const Header = () => {
+const Header = ({ onSearch }) => {
   const [isLogined, setIsLogined] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const checkAuthStatus = async () => {
@@ -24,6 +25,16 @@ const Header = () => {
     checkAuthStatus();
   }, []);
 
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+    onSearch(e.target.value);
+  };
+
+  const clearSearch = () => {
+    setSearchTerm("");
+    onSearch("");
+  };
+
   return (
     <header className="header">
       <div className="left-side">
@@ -33,8 +44,8 @@ const Header = () => {
       </div>
       <div className="search-bar">
         <FontAwesomeIcon icon={faMagnifyingGlass} />
-        <input placeholder="어떤 대회를 찾으세요?" type="text" />
-        <FontAwesomeIcon icon={faXmark} />
+        <input placeholder="어떤 대회를 찾으세요?" type="text" value={searchTerm} onChange={handleSearch} />
+        {searchTerm && <FontAwesomeIcon icon={faXmark} onClick={clearSearch} />}
       </div>
 
       <div className="right-side">

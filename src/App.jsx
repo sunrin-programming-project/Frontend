@@ -1,5 +1,4 @@
 import "./styles/global.scss";
-import Header from "./components/Header.jsx";
 import MainPage from "./pages/MainPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import ProfilePage from "./pages/ProfilePage.jsx";
@@ -10,7 +9,6 @@ const App = () => {
   return (
     <CookiesProvider>
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
