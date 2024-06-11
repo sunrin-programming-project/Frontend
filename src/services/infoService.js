@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000";
+const API_URL = `${import.meta.env.VITE_APP_BACKEND_URL}`;
 
 const updateUserInfo = async (email, name, emailRecieve) => {
   try {

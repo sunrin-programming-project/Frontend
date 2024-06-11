@@ -8,11 +8,11 @@ import axios from "axios";
 const Header = ({ onSearch }) => {
   const [isLogined, setIsLogined] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-
+  const backend = `${import.meta.env.VITE_APP_BACKEND_URL}/auth/status`;
   useEffect(() => {
     const checkAuthStatus = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/auth/status", {
+        const response = await axios.get(backend, {
           withCredentials: true,
         });
         setIsLogined(response.data.isAuthenticated);

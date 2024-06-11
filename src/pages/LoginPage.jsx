@@ -2,6 +2,9 @@ import "../styles/login.scss";
 import Header from "../components/Header";
 
 const LoginPage = () => {
+  const Login = () => {
+    window.location.href = `${import.meta.env.VITE_APP_BACKEND_URL}/auth/google`;
+  };
   return (
     <>
       <Header />
@@ -15,7 +18,7 @@ const LoginPage = () => {
           <div className="google">
             <img src="src\assets\google.svg" alt="googleIcon" />
             <span>
-              <a href="http://localhost:3000/auth/google">구글 계정으로 로그인</a>
+              <p onClick={Login}>구글 계정으로 로그인</p>
             </span>
           </div>
         </div>

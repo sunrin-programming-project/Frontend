@@ -13,7 +13,7 @@ const ProfilePage = () => {
   const handleSubmit = async () => {
     try {
       await infoService.updateUserInfo(email, name, emailRecieve);
-      navigate("/"); // 프로필 정보 수정 성공 시 "/" 경로로 이동
+      navigate("/");
     } catch (error) {
       console.error("Error updating profile:", error);
     }
