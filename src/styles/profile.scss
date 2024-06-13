@@ -42,6 +42,12 @@
         }
       }
     }
+    .submit {
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
     p {
       cursor: pointer;
       padding: 6px;

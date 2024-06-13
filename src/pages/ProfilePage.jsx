@@ -41,7 +41,9 @@ const ProfilePage = () => {
               <span>아니오</span>
             </div>
           </div>
-          <p onClick={handleSubmit}>저장하기</p>
+          <p onClick={handleSubmit} className="submit">
+            저장하기
+          </p>
         </div>
       </div>
     </>

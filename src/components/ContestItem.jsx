@@ -4,7 +4,11 @@ const ContestItem = ({ contest }) => {
   return (
     <div className="box">
       <div className="left">
-        <p>{contest.title}</p>
+        <p>
+          <a href={contest.url} target="_blank">
+            {contest.title}
+          </a>
+        </p>
         <div className="details">
           <div className="detail">
             <h6>주최</h6>

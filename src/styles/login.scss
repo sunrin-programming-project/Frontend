@@ -28,8 +28,8 @@
     }
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-  }
-  .google:hover {
-    transform: scale(1.03);
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
